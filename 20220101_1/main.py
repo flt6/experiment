@@ -17,11 +17,11 @@ for _,ax,ay,az,_ in l:
     # print("%f,%f,%f"%(ax,ay,az))
     x,y,z=x+vx*0.01,y+vy*0.01,z+vz*0.01
     xpos.append(x)
-    ypos.append(y)
+    ypos.append(z)
     pos.append([x,y,z])
 with open("opt.csv",'w') as f:
     for i in pos:
         print(",".join([str(j) for j in i]),file=f)
-plt.title("X-Y")
+plt.title("X-Z")
 plt.plot(xpos, ypos)
 plt.show(block=True)
