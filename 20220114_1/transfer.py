@@ -8,7 +8,7 @@ with open("FGyroscope.csv","w") as f:
         print(' '.join(i),file=f,end='')
 
 t2=[]
-with open('FAccelerometer.csv','r') as f:
+with open('Accelerometer.csv','r') as f:
     t=f.readlines()
     for i in t:
         t2.append(i.split(','))
