@@ -39,7 +39,7 @@ int main(){
         ax[i]-=ave;
         printf("%lf\n",ax[i]);
     }
-cout<<endl<<endl<<"========"<<endl<<endl;
+// cout<<endl<<endl<<"========"<<endl<<endl;
     sum=0;
     ave=0;
     for (int i=0;i<len1;i++){
