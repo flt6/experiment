@@ -13,6 +13,6 @@ plt.xlim((min(x)-2,min(x)+len))
 plt.ylim((min(y)-2,min(y)+len))
 plt.plot(x, y,'.')
 plt.grid()
-# plt.savefig("img.png",dpi=2000)
-plt.show(block=True)
+plt.savefig("img.png",dpi=2000)
+# plt.show(block=True)
 
