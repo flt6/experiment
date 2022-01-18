@@ -7,6 +7,7 @@ with open("out.txt","r") as f:
         t1,t2=i.split(" ")
         x.append(float(t1))
         y.append(float(t2))
+plt.figure(figsize=(5,5))
 plt.title("X-Y")
 len=max(max(x)-min(x),max(y)-min(y))+0.1
 plt.xlim((min(x)-0.05,min(x)+len))
