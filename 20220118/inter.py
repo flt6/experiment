@@ -15,4 +15,5 @@ a.plot(ax,".")
 b.plot(ay,".")
 
 f.show()
-plt.show(block=True)
+# plt.show(block=True)
+f.savefig("data.png",dpi=800)
