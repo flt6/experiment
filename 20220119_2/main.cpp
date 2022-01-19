@@ -4,6 +4,7 @@
 using namespace std;
 
 const double ax0=-0.0008566850547577447,ay0=-0.0007844198694559001;
+// const double ax0=0,ay0=0;
 double ax[10000],ay[10000],w[10000],ta[10000],tw[10000];
 double x[10000],y[10000];
 double vx,vy,dta,dtw,wjf,lx,ly;
@@ -19,7 +20,9 @@ int main(){
     freopen("FAccelerometer.csv","r",stdin);
     getline(cin,temp);
     while(cin>>ta[len1++]>>ax[len1]>>ay[len1]>>temp){}
-    len1--;
+    len1-=2;
+    //Todo: Check out why the last number wasn't read.
+    //      Now just modify len1 to let it looks right.
     fclose(stdin);
     freopen("FGyroscope.csv","r",stdin);
     cin.clear();
