@@ -20,10 +20,18 @@ len1=max(max(x)-min(x),max(y)-min(y))+0.1
 plt.xlim((min(x)-0.05,min(x)+len1))
 plt.ylim((min(y)-0.05,min(y)+len1))
 plt.grid()
-for i in range(len(t)):
-    plt.plot(x[i], y[i],'.',color="black")
-    plt.pause(t[i]/10)
 
 # plt.savefig("img.png",dpi=2000)
+
+
+t[0]=0.001
+for i in range(len(t)):
+    dt=t[i]-t[i-1]
+    if dt<=0:dt=0.001
+    # print(dt)
+    plt.plot(x[i], y[i],'.',color="black")
+    plt.pause(dt)
+
+
 # plt.show(block=True)
 plt.pause(0)
