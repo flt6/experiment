@@ -60,7 +60,7 @@ int main(){
         while (ta[i]>tw[j]){
             j++;
             dtw=tw[j+1]-tw[j];
-            wjf+=w[j-1]*dtw+w[j]*dtw*dtw*0.5;
+            wjf+=w[j]*dtw;
         }
         dta=ta[i+1]-ta[i];
         x[i]=x[i-1]+vx*cos(wjf)*dta-vy*sin(wjf)*dta;

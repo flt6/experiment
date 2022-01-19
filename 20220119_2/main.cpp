@@ -3,8 +3,8 @@
 #include <cstdlib>
 using namespace std;
 
-const double ax0=-0.0008566850547577447,ay0=-0.0007844198694559001;
-// const double ax0=0,ay0=0;
+// const double ax0=-0.0008566850547577447,ay0=-0.0007844198694559001;
+const double ax0=0,ay0=0;
 double ax[10000],ay[10000],w[10000],ta[10000],tw[10000];
 double x[10000],y[10000];
 double vx,vy,dta,dtw,wjf,lx,ly;
@@ -60,7 +60,7 @@ int main(){
         while (ta[i]>tw[j]){
             j++;
             dtw=tw[j+1]-tw[j];
-            wjf+=w[j-1]*dtw+w[j]*dtw*dtw*0.5;
+            wjf+=w[j]*dtw;
         }
         dta=ta[i+1]-ta[i];
         x[i]=x[i-1]+vx*cos(wjf)*dta-vy*sin(wjf)*dta;
