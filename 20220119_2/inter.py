@@ -30,5 +30,5 @@ x.legend()
 x.grid()
 
 
-plt.show(block=True)
-# plt.savefig("data.png",dpi=800)
+# plt.show(block=True)
+plt.savefig("data.png",dpi=800)
