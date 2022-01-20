@@ -9,7 +9,6 @@ with open("FGyroscope.csv","w") as f:
 
 t2=[]
 with open('Linear Acceleration.csv','r') as f:
-    f.readline()
     t=f.readlines()
     for i in t:
         t2.append(i.split(','))

@@ -21,12 +21,6 @@ len1=max(max(x)-min(x),max(y)-min(y))+0.1
 plt.xlim((min(x)-0.05,min(x)+len1))
 plt.ylim((min(y)-0.05,min(y)+len1))
 plt.grid()
+plt.plot(x,y,".")
 
-t[0]=0.001
-for i in range(len(t)):
-    dt=t[i]-t[i-1]
-    if dt<=0:dt=0.001
-    plt.plot(x[i], y[i],'.',color="black")
-    plt.pause(dt)
-
-plt.pause(0)
+plt.savefig("img.png",dpi=800)
