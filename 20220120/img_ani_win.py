@@ -42,7 +42,7 @@ def up(frame):
     # dt=t[i]-t[i-1]
     # sleep(1)
     return f,
-ani=animation.FuncAnimation(fig,up,range(0,len(t),3),interval=6,blit=True,repeat=False)
+ani=animation.FuncAnimation(fig,up,range(0,len(t),1),interval=5,blit=True,repeat=False)
 # f.show()
 # fig.show(block=True)
 # ani.save("img.mp4")

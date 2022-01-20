@@ -25,7 +25,7 @@ t.pop()
 
 
 if INTERVAL is None:
-    INTERVAL=t[-1]/len(t)
+    INTERVAL=t[-1]-t[-2]
 INTERVAL*=RATE
 
 print("Begin!")
